@@ -14,8 +14,13 @@ export default class CharacterCountComponent extends Component {
   }
 
   <template>
-    <div class="character-counts {{if this.showRequired 'more-required'}}">
-      {{this.charCount}}
-    </div>
+    {{#if this.charCount}}
+      <div
+        class="character-counts {{if this.showRequired 'more-required'}}"
+        ...attributes
+      >
+        {{this.charCount}}
+      </div>
+    {{/if}}
   </template>
 }

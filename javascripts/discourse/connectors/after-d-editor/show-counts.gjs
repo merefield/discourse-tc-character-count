@@ -1,6 +1,6 @@
 import CharacterCounts from "../../components/character-counts";
 
-<template>
+export default <template>
   <CharacterCounts
     @missingReplyCharacters={{@outletArgs.composer.missingReplyCharacters}}
     @length={{@outletArgs.composer.replyLength}}
